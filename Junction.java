@@ -55,7 +55,7 @@ public class Junction implements Behavior{
 	public void pattern(){
 		LCD.clear();
 		LCD.drawString(pattern.get(patternIndex) + "", 0, 0);
-		Delay.msDelay(1000);
+		Delay.msDelay(200);
 		if(pattern.get(patternIndex) == 0){
 			left.rotate(50, true);
 			right.rotate(440);
@@ -73,3 +73,4 @@ public class Junction implements Behavior{
 		patternIndex = (patternIndex + 1) % pattern.size();
 	}
 }
+
