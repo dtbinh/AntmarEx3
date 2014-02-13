@@ -39,7 +39,7 @@ public class FollowLineLeft implements Behavior{
 		//LCD.clearDisplay();
 		//System.out.println("FOLLOW LEFT");
 		right.forward();
-		while(!suppressed){
+		while(!suppressed && Math.abs(SensorPort.S2.readValue() - this.black) <= 3){
 			Thread.yield();
 		}
 		suppressed = false;
