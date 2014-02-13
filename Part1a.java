@@ -116,13 +116,6 @@ public class Part1a extends Robot.RobotDemo implements Runnable {
 
 	}
 
-	public static void main(String[] args) {
 
-		RangeFinder ranger = new OpticalDistanceSensor(SensorPort.S1);
-		Part1a demo = new Part1a(ranger);
-		Button.waitForAnyPress();
-		demo.run();
-
-	}
 
 }
