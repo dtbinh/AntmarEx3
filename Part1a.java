@@ -10,6 +10,7 @@ import lejos.robotics.RangeFinder;
 import lejos.util.Delay;
 
 public class Part1a extends Robot.RobotDemo implements Runnable {
+	System.out.println("hello");
 
 	private final RangeFinder ranger;
 	private final int D_DISTANCE;
@@ -116,6 +117,13 @@ public class Part1a extends Robot.RobotDemo implements Runnable {
 
 	}
 
+	public static void main(String[] args) {
 
+		RangeFinder ranger = new OpticalDistanceSensor(SensorPort.S1);
+		Part1a demo = new Part1a(ranger);
+		Button.waitForAnyPress();
+		demo.run();
+
+	}
 
 }
