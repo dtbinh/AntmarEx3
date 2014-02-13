@@ -10,7 +10,6 @@ import lejos.robotics.RangeFinder;
 import lejos.util.Delay;
 
 public class Part1a extends Robot.RobotDemo implements Runnable {
-	System.out.println("hello");
 
 	private final RangeFinder ranger;
 	private final int D_DISTANCE;
@@ -44,7 +43,7 @@ public class Part1a extends Robot.RobotDemo implements Runnable {
 				}
 
 			}
-
+System.out.println("hello");
 			@Override
 			public void buttonReleased(Button b) {
 				// TODO Auto-generated method stub
