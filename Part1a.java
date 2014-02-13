@@ -43,7 +43,7 @@ public class Part1a extends Robot.RobotDemo implements Runnable {
 				}
 
 			}
-System.out.println("hello");
+
 			@Override
 			public void buttonReleased(Button b) {
 				// TODO Auto-generated method stub
