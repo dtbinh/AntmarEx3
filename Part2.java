@@ -1,4 +1,3 @@
-package FeedbackAndFriends;
 
 import java.util.ArrayList;
 
@@ -23,7 +22,7 @@ public class Part2 extends Robot.RobotDemoNoExit implements Runnable {
 	private final NXTRegulatedMotor wheelRight = Motor.B;
 	private final LightSensor lightLeft;
 	private final LightSensor lightRight;
-	private int MoveSpeed = 75;
+	private int MoveSpeed = 130;
 	private ArrayList<Integer> pattern;
 	private int whiteRight;
 	private int blackRight;
@@ -153,3 +152,5 @@ public class Part2 extends Robot.RobotDemoNoExit implements Runnable {
 		whiteLeft = lightLeft.getLightValue();
 	}
 }
+
+
